@@ -16,3 +16,5 @@ W20151214-19:29:34.586(-8)? (STDERR)     at Function._.each._.forEach (/Users/sa
 W20151214-19:29:34.587(-8)? (STDERR)     at /Users/sashko/git/gql-experiment/.meteor/local/build/programs/server/boot.js:137:5
 => Exited with code: 8
 ```
+
+This is because Node.js supports `require`ing `json` files, but Meteor doesn't compile them into ES modules at the moment.
